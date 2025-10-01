@@ -36,6 +36,7 @@ function App() {
           : friend
       )
     );
+    setSelectedFriends(null);
   }
   const [isAdd, setIsAdd] = useState(false);
   function handleAdd() {
