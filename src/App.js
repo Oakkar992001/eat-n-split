@@ -208,7 +208,7 @@ function Friend({ friend, handleSelected, selectedFriends }) {
   const isSelected = selectedFriends?.id === friend.id;
   return (
     <li className={isSelected ? "selected" : ""}>
-      <img src={friend.image} />
+      <img src={friend.image} alt={friend.name} />
 
       <h3>{friend.name}</h3>
       <p className={styleContent}>{content}</p>
