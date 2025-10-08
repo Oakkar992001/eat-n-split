@@ -72,7 +72,13 @@ function App() {
           {!isAdd ? "Add Friend" : "Close"}
         </button>
       </div>
-      <SplitBill selectedFriends={selectedFriends} onSplitBill={handleSplit} />
+      {selectedFriends && (
+        <SplitBill
+          selectedFriends={selectedFriends}
+          onSplitBill={handleSplit}
+          key={selectedFriends.id}
+        />
+      )}
     </div>
   );
 }
